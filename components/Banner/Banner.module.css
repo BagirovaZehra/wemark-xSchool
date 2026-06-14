@@ -1,0 +1,194 @@
+.bannerSection {
+    position: relative;
+    width: 100%;
+    height: 963px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.bannerContainer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mainTitle {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+}
+
+.mobileOnly {
+    display: none;
+}
+
+.mainTitle span {
+    display: block;
+    font-family: var(--font-firs), sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #E0E0E0;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+.line1 {
+    position: absolute;
+    left: 5%;
+    top: 0px;
+    text-align: left;
+    font-size: 116px;
+    line-height: 122px;
+}
+
+.line2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 135px;
+    text-align: center;
+    font-size: 116px;
+    line-height: 122px;
+}
+
+.line3 {
+    position: absolute;
+    right: 5%;
+    top: 270px;
+    text-align: right;
+    font-size: 116px;
+    line-height: 122px;
+}
+
+@media screen and (max-width: 1200px) {
+    .mainTitle span {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .mainTitle {
+        height: 300px;
+    }
+
+    .line2 {
+        top: 100px;
+    }
+
+    .line3 {
+        top: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .mainTitle span {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .mainTitle {
+        height: 240px;
+    }
+
+    .line2 {
+        top: 80px;
+    }
+
+    .line3 {
+        top: 160px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bannerSection {
+        height: 100vh;
+    }
+
+    .bannerContainer {
+        padding: 0 24px;
+    }
+
+    .mainTitle {
+        height: auto;
+        gap: 10px;
+        padding-top: 200px;
+    }
+
+    .mainTitle span {
+        transform: none;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: left;
+        white-space: normal;
+        width: 50%;
+    }
+
+    .desktopOnly {
+        display: none;
+    }
+
+    .mobileOnly {
+        display: block;
+    }
+
+    .line1 {
+        position: absolute;
+        width: 189px;
+        height: 42px;
+        left: calc(50% - 189px/2 - 37px);
+    }
+
+    .line2 {
+        position: absolute;
+        width: 215px;
+        height: 42px;
+        left: calc(50% - 215px/2 + 25px);
+        font-family: 'TT Hoves';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .line3 {
+        position: absolute;
+        width: 88px;
+        height: 42px;
+        left: calc(50% - 88px/2 + 52.5px);
+        font-family: 'TT Hoves';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    .mainTitle span {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    .mainTitle span {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,199 @@
+.footer {
+  background: #14141A;
+  color: #fff;
+  padding: 80px 80px 40px;
+  position: relative;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  gap: 40px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 60px;
+}
+
+.arrow{
+  cursor: pointer;
+}
+
+.column h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #E0E0E0;
+
+
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.column li {
+  margin-bottom: 12px;
+}
+
+.column a,
+.column p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: #E0E0E0;
+  opacity: 0.5;
+  text-decoration: none;
+
+}
+
+.column p {
+  margin-top: 20px;
+}
+
+.logoSection {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.logoImage {
+  max-width: 970px;
+  width: 100%;
+  opacity: 0.4;
+  user-select: none;
+  pointer-events: none;
+
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+
+.legalInfo {
+  display: flex;
+  gap: 50px;
+}
+
+.arrowUpMobile {
+  display: none;
+  cursor: pointer;
+}
+
+.lang {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.langMobile {
+  display: none;
+}
+
+@media screen and (max-width: 1244px) {
+  .footer {
+    padding: 80px 40px 40px;
+  }
+}
+
+@media screen and (max-width: 893px) {
+  .footer {
+    padding: 80px 40px 40px;
+  }
+
+  .arrow {
+    width: 50px;
+    height: 30px;
+  }
+
+  .topSection {
+    gap: 20px;
+  }
+
+  .column h4 {
+    font-size: 25px;
+  }
+
+  .column p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .terms {
+    display: none;
+  }
+
+  .topSection {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+
+  .column h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .column a,
+  .column p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .logoSection {
+    padding: 0;
+    /* height: 100px; */
+  }
+
+  .bottomSection {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  .legalInfo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .arrowUp {
+    display: none;
+  }
+
+  .arrowUpMobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .lang {
+    display: none;
+  }
+
+  .langMobile {
+    cursor: pointer;
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    width: 100%;
+    font-size: 15px;
+  }
+
+}
