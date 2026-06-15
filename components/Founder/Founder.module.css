@@ -142,6 +142,7 @@
        .messageTitle {
         font-size: 20px;
         line-height: 28px;
+        padding-bottom: 0;
     }
 
     .description {
