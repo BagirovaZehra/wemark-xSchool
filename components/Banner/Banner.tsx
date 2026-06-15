@@ -33,7 +33,7 @@ export default async function Banner() {
               {line}
             </span>
           ))}
-        </h1>
+          </h1>
       </div>
     </section>
   );

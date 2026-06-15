@@ -8,19 +8,14 @@ export default function AboutSlider({ images }: { images: any[] }) {
   return (
     <Swiper
       modules={[Autoplay]}
-      spaceBetween={16}
-      slidesPerView={2}
-      loop={true} 
-      speed={6000} 
+      spaceBetween={47} 
+      slidesPerView={'auto'} 
+      loop={true}
+      speed={6000}
       autoplay={{
-        delay: 0, 
-        disableOnInteraction: false, 
+        delay: 0,
+        disableOnInteraction: false,
         pauseOnMouseEnter: false,
-        stopOnLastSlide: false,
-      }}
-      allowTouchMove={true} 
-      breakpoints={{
-        768: { slidesPerView: 3 },
       }}
       className={styles.swiperContainer}
     >

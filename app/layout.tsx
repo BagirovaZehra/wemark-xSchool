@@ -50,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="az">
+    <html lang="en">
       <body className={`${ttHoves.variable} ${ttFirsNeue.variable}`}>
         <Header />
         {children}

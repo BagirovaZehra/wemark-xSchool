@@ -1,8 +1,9 @@
 .footer {
   background: #14141A;
   color: #fff;
-  padding: 80px 80px 40px;
+  padding: 70px 60px 37px;
   position: relative;
+  margin-top: 200px;
 }
 
 .topSection {
@@ -13,7 +14,7 @@
   padding-bottom: 60px;
 }
 
-.arrow{
+.arrow {
   cursor: pointer;
 }
 
@@ -36,13 +37,9 @@
   margin-top: 20px;
 }
 
-.column li {
-  margin-bottom: 12px;
-}
-
 .column a,
 .column p {
-  font-style: normal;
+  font-style: medium;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
@@ -66,10 +63,13 @@
 .logoImage {
   max-width: 970px;
   width: 100%;
-  opacity: 0.4;
   user-select: none;
   pointer-events: none;
 
+}
+
+.lang img {
+  color: rgba(224, 224, 224, 1);
 }
 
 .bottomSection {
@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 40px 20px;
+    padding: 81px 20px 31px;
   }
 
   .terms {
@@ -139,25 +139,37 @@
   }
 
   .topSection {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 0px;
     padding-bottom: 40px;
+  }
+
+  .column:first-child {
+    width: 110px;
+  }
+
+
+  .column:nth-child(3),
+  .column:nth-child(4) {
+    grid-column: span 2;
+    margin-top: 48px
   }
 
   .column h4 {
     font-size: 20px;
     margin-bottom: 15px;
+    line-height: 28px;
   }
 
   .column a,
   .column p {
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 32px;
   }
 
   .logoSection {
     padding: 0;
-    /* height: 100px; */
   }
 
   .bottomSection {
@@ -172,6 +184,11 @@
     gap: 10px;
   }
 
+  .legalInfo p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
   .arrowUp {
     display: none;
   }
@@ -179,6 +196,8 @@
   .arrowUpMobile {
     display: flex;
     align-items: center;
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .lang {
@@ -188,12 +207,46 @@
   .langMobile {
     cursor: pointer;
     display: flex;
-    margin-top: 25px;
+    margin-top: 80px;
+    margin-bottom: -15px;
     align-items: center;
     gap: 8px;
     color: #666;
     width: 100%;
-    font-size: 15px;
+
+  }
+
+  .logoImage {
+    height: 46px;
+    margin: 40px 0;
+  }
+
+  .langMobile pre {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .arrow {
+    width: 25px;
+    height: 15px;
+  }
+
+
+}
+
+@media screen and (max-width:409px) {
+  .column:nth-child(2) {
+    margin-left: -75px;
+  }
+}
+
+@media screen and (max-width:364px) {
+  .legalInfo p {
+    font-size: 10px;
+  }
+
+  .arrowUpMobile {
+    font-size: 10px;
   }
 
 }

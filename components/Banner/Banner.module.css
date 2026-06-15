@@ -57,6 +57,7 @@
     text-align: left;
     font-size: 116px;
     line-height: 122px;
+
 }
 
 .line2 {
@@ -118,7 +119,7 @@
 
 @media screen and (max-width: 768px) {
     .bannerSection {
-        height: 100vh;
+        height: 534px;
     }
 
     .bannerContainer {
@@ -126,18 +127,36 @@
     }
 
     .mainTitle {
-        height: auto;
-        gap: 10px;
-        padding-top: 200px;
+        position: relative;
+        height: 200px !important;
+        width: 100%;
+        margin: 0;
     }
 
     .mainTitle span {
-        transform: none;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: left;
-        white-space: normal;
-        width: 50%;
+        position: absolute !important;
+        font-size: 36px ;
+        line-height: 100% !important;
+        letter-spacing: -0.02em;
+        white-space: nowrap;
+        display: block;
+        transform: none !important;
+        text-align: left !important;
+    }
+
+    .line1 {
+        left: calc(50% - 189px/2 - 87px);
+        top: 45px;
+    }
+
+    .line2 {
+        left: calc(50% - 215px/2 + 25px);
+        top: 90px;
+    }
+
+    .line3 {
+        left: calc(50% - 88px/2 + 2.5px);
+        top: 135px;
     }
 
     .desktopOnly {
@@ -148,47 +167,24 @@
         display: block;
     }
 
+}
+
+@media screen and (max-width: 375px) {
+    .mainTitle span {
+        font-size: 28px !important;
+        line-height: 100% !important;
+    }
+
     .line1 {
-        position: absolute;
-        width: 189px;
-        height: 42px;
-        left: calc(50% - 189px/2 - 37px);
+        left: 20px;
+        top: 40px;
     }
 
     .line2 {
-        position: absolute;
-        width: 215px;
-        height: 42px;
-        left: calc(50% - 215px/2 + 25px);
-        font-family: 'TT Hoves';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        text-align: center;
+        top: 80px;
     }
 
     .line3 {
-        position: absolute;
-        width: 88px;
-        height: 42px;
-        left: calc(50% - 88px/2 + 52.5px);
-        font-family: 'TT Hoves';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 504px) {
-    .mainTitle span {
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width: 427px) {
-    .mainTitle span {
-        font-size: 20px;
+        top: 120px;
     }
 }

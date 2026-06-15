@@ -1,11 +1,10 @@
 .marqueeWrapper {
     width: 100%;
-    padding: 40px 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     /* gap: 30px; */
-    margin: 90px 0;
+    margin-top: 260px;
 }
 
 .track {

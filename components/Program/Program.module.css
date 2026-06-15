@@ -1,5 +1,5 @@
 .container {
-    padding: 0 80px 50px;
+    padding: 260px 60px 0;
 }
 
 .title {
@@ -17,9 +17,8 @@
 
 .content p {
     font-family: var(--font-hoves);
-    font-size: 18px;
-    line-height: 1.6;
-    /* margin-bottom: 10px; */
+    font-size: 30px;
+    line-height: 44px;
 }
 
 .content strong {
@@ -31,6 +30,8 @@
     list-style: disc;
     padding-left: 20px;
     margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 44px;
 }
 
 .content li {
@@ -40,7 +41,7 @@
 
 @media screen and (max-width: 1244px) {
     .container {
-        padding: 0 40px;
+        padding: 0 20px;
     }
 }
 
@@ -55,5 +56,15 @@
         color: #14141A;
 
 
+    }
+
+    .content p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .content ul {
+        font-size: 20px;
+        line-height: 28px;
     }
 }

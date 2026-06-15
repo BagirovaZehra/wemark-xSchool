@@ -18,19 +18,21 @@ export default function FaqClient({ data }: { data: any }) {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>{data.faq_title}</h2>
-      
+
       {faqList.map((item: any, index: number) => {
         const isOpen = openIndexes.includes(index);
         return (
           <div key={index} className={styles.item}>
-            <button 
-              className={styles.question} 
+            <button
+              className={`${styles.question} ${isOpen ? styles.active : ''}`}
               onClick={() => toggleQuestion(index)}
             >
-              {item.question}
-              <span className={styles.btn}>{isOpen ? '-' : '+'}</span>
+              <span>{item.question}</span>
+              <span className={styles.icon}>
+                {isOpen ? <img src="images/minus.svg" alt="-" /> : <img src="images/plus.svg" alt="+" />}
+              </span>
             </button>
-            
+
             {isOpen && (
               <div className={styles.answer}>
                 <div dangerouslySetInnerHTML={{ __html: item.answer }} />

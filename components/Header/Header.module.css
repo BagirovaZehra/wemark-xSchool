@@ -12,7 +12,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 80px;
+  padding: 0px 60px;
   margin-top: 42px; 
 }
 
@@ -85,7 +85,7 @@
 
 @media screen and (max-width: 1244px) {
   .headerContainer {
-    padding: 0px 40px; 
+    padding: 0px 20px; 
     gap: 30px;
   }
   

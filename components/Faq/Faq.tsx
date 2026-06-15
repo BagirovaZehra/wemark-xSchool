@@ -1,11 +1,11 @@
 import FaqClient from './FaqClient';
 
 async function getFaqData() {
-  const res = await fetch('https://admin.wemark.pro/api/tasks-xschool', { 
-    cache: 'no-store' 
+  const res = await fetch('https://admin.wemark.pro/api/tasks-xschool', {
+    cache: 'no-store'
   });
   const data = await res.json();
-  return data; 
+  return data;
 }
 
 export default async function Faq() {
