@@ -103,6 +103,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .founderSection{
+        padding-top: 0;
+    }
     .content {
         flex-direction: column;
         justify-content: center;

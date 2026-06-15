@@ -41,11 +41,14 @@
 
 @media screen and (max-width: 1244px) {
     .container {
-        padding: 0 20px;
+        padding: 260px 20px 0;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .container{
+        padding-top: 60px;
+    }
     .title {
         font-style: normal;
         font-weight: 600;
